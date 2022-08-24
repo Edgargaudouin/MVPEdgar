@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia de Edgar</title>
+</head>
+
+<body>
+    <p>
+        holaaaa
+        {{familiares[0]}}
+       
+        
+    </p>
+
+</body>
+
+</html>
+
+
+{% for n in familiares %}
+{{Familia.nombre}}
+{{Familia.apellido}}
+{{Familia.parentezco}}
+{{Familia.edad}}
+{{Familia.fecha_nacimiento}}
+<br>
+        {% endfor %}
