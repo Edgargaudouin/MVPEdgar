@@ -9,11 +9,23 @@
 </head>
 
 <body>
+    <h1> <strong>¡FAMILIA DE EDGAR! </strong></h1>
     <p>
-        holaaaa
-        {{familiares[0]}}
-       
-        
+        {% for familiar in familiares %}
+            <div>
+               <p>
+                Nombre: {{familiar.nombre}}<br>        
+                Apellido: {{familiar.apellido}}<br>
+                Parentesco: {{familiar.parentesco}}<br>
+                Edad: {{familiar.edad}}<br>
+                Fecha de nacimiento: {{familiar.fecha_nacimiento}}<br>
+                ---------------------------
+               </p> 
+            </div>
+
+        {%endfor%}
+
+
     </p>
 
 </body>
@@ -28,4 +40,4 @@
 {{Familia.edad}}
 {{Familia.fecha_nacimiento}}
 <br>
-        {% endfor %}
+{% endfor %}
